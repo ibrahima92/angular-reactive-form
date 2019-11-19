@@ -1,0 +1,48 @@
+.login-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login--form {
+  background: #fff;
+  width: 25rem;
+  padding: 1rem;
+}
+.border-round {
+  border-radius: 0.8rem;
+  box-shadow: 1px 1px 1px #ccc;
+}
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.p-1 {
+  padding: 1rem;
+}
+.btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  margin-right: 0.5rem;
+  outline: none;
+  border-radius: 2rem;
+  padding: 0.7rem 1.7rem;
+  font-size: 1rem;
+  &-primary {
+    background: #05cf60;
+    color: #fff;
+
+    &:hover {
+      background: lighten(#05cf60, 5%);
+    }
+  }
+}
+
+.text-danger {
+  font-size: 0.8rem;
+  color: #cb0000;
+}

@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  background: #f5f6f9;
+  color: #464646;
+  line-height: 1.6;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  width: 20rem;
+  padding: 0.7rem;
+  margin: auto;
+  border-radius: 0.8rem;
+  border: 1px solid #bdbdbd;
+  margin-bottom: 0.5rem;
+  outline: none;
+}

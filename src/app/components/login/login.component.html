@@ -1,0 +1,35 @@
+<div class="login-container">
+  <form
+    [formGroup]="loginForm"
+    (ngSubmit)="loginUser()"
+    class="login--form border-round"
+  >
+    <h1 class="text-center text-uppercase p-1">Reactive Form</h1>
+    <input type="text" placeholder="Username" formControlName="username" />
+    <p
+      text-center
+      *ngIf="
+        !loginForm.get('username').valid && loginForm.get('username').touched
+      "
+      class="text-danger text-center"
+    >
+      Your username is not valid!
+    </p>
+    <input type="password" placeholder="Password" formControlName="password" />
+    <p
+      text-center
+      *ngIf="
+        !loginForm.get('password').valid && loginForm.get('password').touched
+      "
+      class="text-danger text-center m-small text-small"
+    >
+      Your password is not valid!
+    </p>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary">
+        Sign in
+      </button>
+    </div>
+  </form>
+</div>
